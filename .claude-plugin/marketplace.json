@@ -1,0 +1,12 @@
+{
+  "name": "context-thermo",
+  "owner": {
+    "name": "axelbit08"
+  },
+  "plugins": [
+    {
+      "name": "context-thermo",
+      "source": "./"
+    }
+  ]
+}

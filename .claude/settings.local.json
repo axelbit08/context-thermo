@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(gh *)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell($env:Path = [Environment]::GetEnvironmentVariable\\('Path','Machine'\\) + ';' + [Environment]::GetEnvironmentVariable\\('Path','User'\\); \\(Get-Command gh, git -ErrorAction SilentlyContinue\\).Source)",
+      "PowerShell(winget install *)",
+      "PowerShell($env:Path = [Environment]::GetEnvironmentVariable\\('Path','Machine'\\) + ';' + [Environment]::GetEnvironmentVariable\\('Path','User'\\); \\(Get-Command gh\\).Source)"
+    ]
+  }
+}

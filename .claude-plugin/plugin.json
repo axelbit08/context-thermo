@@ -1,0 +1,10 @@
+{
+  "name": "context-thermo",
+  "version": "0.1.0",
+  "description": "A live green→red context gauge above your prompt that auto-runs /compact at 70 %",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "axelbit08"
+  },
+  "license": "MIT"
+}
