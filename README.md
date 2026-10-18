@@ -7,7 +7,7 @@ Every message eats your context window. At some point Claude starts forgetting w
 **context-thermo fixes that. Forever.**
 
 ```
-Contexte ████████████████░░░░ 78 %  156k/200k · auto à 70 %
+Contexte █ █ █ █ █ █ █ █ ░ ░ 78 %  156k/200k · auto à 70 %
 ```
 
 A live gauge sits right above your prompt and goes **🟢 green → 🟡 yellow → 🔴 red** as your context fills up. And the moment it hits **70 %**, it does the thing you always forget to do:
@@ -53,7 +53,7 @@ claude plugin install context-thermo --marketplace axelbit08/context-thermo
 ## 🧠 How it works
 
 - Listens to `session.measure` — the same figures as Claude's status line, pushed after every turn, zero polling, zero cost.
-- Draws a 20-cell gradient bar above the prompt.
+- Draws a 10-segment gauge above the prompt, each segment colored by its position (green → red), lit up to the current fill.
 - At ≥ 70 %, waits for the current answer to finish, then calls the exact same compaction as `/compact`, with instructions to keep what matters.
 
 ~150 lines of TypeScript. No dependencies. No tracking.
